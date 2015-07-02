@@ -22,7 +22,7 @@ QUASAR_MAIN_BIN = quasar.img
 KERNEL_LINKER_FILE = $(ARCH_SRC_DIR)/linker.ld
 
 ASFLAGS = -felf64
-RUSTFLAGS = -O --target $(TGT_ARCH)-elf-linux
+RUSTFLAGS = -O --target $(TGT_ARCH)-unknown-linux-gnu
 MAIN_LDFLAGS = -z nodefaultlib -n
 
 all: $(QUASAR_MAIN_BIN)
